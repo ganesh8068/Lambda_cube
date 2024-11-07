@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1a237e;
+            --secondary-color: #eff1fc;
+            --footer-colour: #dbe0fd;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+        }
+
+        .navbar {
+            padding: 1rem 0;
+        }
+
+        .navbar-brand {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+        }
+
+        .btn-outline {
+            border: 1px solid #666;
+            color: #666;
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            margin-left: 1rem;
+        }
+
+        .hero-section {
+            background-color: var(--secondary-color);
+            padding: 6rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-section::after {
+            position: absolute;
+            background-color: #fff;
+            border-radius: 50%;
+            right: -200px;
+            top: -200px;
+            z-index: 0;
+        }
+
+        .feature-section {
+            padding: 6rem 0;
+        }
+
+        .feature-section img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-section {
+            background-color: var(--secondary-color);
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .price {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 2rem 0;
+        }
+
+        .footer {
+            padding: 2rem 0;
+            background-color: var(--footer-colour);
+        }
+
+        .social-links a {
+            color: var(--primary-color);
+            margin: 0 0.5rem;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Landing</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Introduce Your Product Quickly & Effectively</h1>
+                    <p class="lead mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                    <div>
+                        <button class="btn btn-primary">Purchase It Kit</button>
+                        <button class="btn btn-outline">Learn More</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 position-relative">
+                    <img src="SVG/Business Plan-bro.svg" alt="Product illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-section">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Light, Fast & Powerful</h2>
+                    <p class="mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, non labore perspiciatis placeat officiis commodi fugit sapiente nesciunt et, consectetur molestias perferendis fugiat corrupti inventore quod tempora. <br> <br>Veritatis architecto voluptate quibusdam consequatur laudantium dolorem doloribus rerum exercitationem veniam pariatur perferendis aspernatur, amet hic quae nobis.</p>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <img src="SVG/7x24h-svgrepo-com.svg?height=50&width=50 " alt="Feature icon" class="feature-icon">
+                            <h5 class="fw-bold">Title Goes Here</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <img src="/SVG/availability-svgrepo-com.svg?height=50&width=50" alt="Feature icon" class="feature-icon">
+                            <h5 class="fw-bold">Title Goes Here</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="SVG/Contact us-amico.svg?height=400&width=400" alt="Feature illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-section bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="SVG/Credit card-bro.svg?height=400&width=400" alt="Feature illustration" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Light, Fast & Powerful</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, perspiciatis dolor explicabo odio esse tempora vitae? Voluptatibus magni quibusdam, sit suscipit commodi aut. Vitae, perferendis accusantium. <br> <br> Expedita quam molestias ratione eaque incidunt vel harum ut commodi in sequi vitae quibusdam, asperiores nisi eum magni assumenda officiis eveniet accusantium quas tenetur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-section bg-light hero-section">
+      <div class="container">
+          <div class="row align-items-center">
+              <div class="col-lg-6">
+                  <img src="SVG/SEO analytics team-cuate.svg?height=400&width=400" alt="Feature illustration" class="img-fluid">
+              </div>
+              <div class="col-lg-6">
+                  <h2 class="fw-bold mb-4">Light, Fast & Powerful</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, perspiciatis dolor explicabo odio esse tempora vitae? Voluptatibus magni quibusdam, sit suscipit commodi aut. Vitae, perferendis accusantium. <br> <br> Expedita quam molestias ratione eaque incidunt vel harum ut commodi in sequi vitae quibusdam, asperiores nisi eum magni assumenda officiis eveniet accusantium quas tenetur.</p>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <section class="feature-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">Light, Fast & Powerful</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde aliquid quo perferendis ut, impedit quis alias in dolores blanditiis nostrum! Quisquam repellat fuga impedit, harum illo mollitia necessitatibus eum. <br> <br> Quibusdam tenetur dolor asperiores suscipit aliquid a quae magni totam veritatis vitae qui nobis molestias velit nulla ad fugit, laboriosam aut dolorem nesciunt nisi alias mollitia impedit quod? Nemo, assumenda quos!</p> <br>
+                    <button class="btn btn-primary">Purchase Now</button>
+                </div>
+                <div class="col-lg-6">
+                    <img src="SVG/Finance-rafiki.svg?height=400&width=400" alt="Feature illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <div class="container">
+            <h2 class="fw-bold mb-4">A Price To Suit Everyone</h2>
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto explicabo <br> quisquam inventore perspiciatis quae iste voluptatum facilis neque accusantium. <br> <br> Ipsum, ea mollitia perspiciatis ab odit, sapiente ipsam a doloremque laboriosam nihil voluptas minima culpa  </p>
+            <div class="price">$40</div>
+            <p class="text-muted mb-4">UI Design Kit</p>
+            <p class="mb-4">See, One price. Simple.</p>
+            <button class="btn btn-primary">Purchase Now</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <p class="mb-0">&copy;2023 Yourcompany</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <a href="#" class="navbar-brand">Landing</a>
+                </div>
+                <div class="col-md-4 text-end">
+                    <button class="btn btn-primary">Purchase Now</button>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <nav>
+                        <a href="#home" class="me-3 text-decoration-none text-dark">Home</a>
+                        <a href="#about" class="me-3 text-decoration-none text-dark">About</a>
+                        <a href="#contact" class="text-decoration-none text-dark">Contact</a>
+                    </nav>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.3.4/dist/vue.global.js"></script>
+    <script src="https://kit.fontawesome.com/your-kit-code.js"></script>
+    
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    // Add reactive data here if needed
+                }
+            }
+        }).mount('#app')
+
+        // Smooth scrolling
+        $(document).ready(function() {
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+                var target = this.hash;
+                var $target = $(target);
+                
+                $('html, body').animate({
+                    'scrollTop': $target.offset().top - 70
+                }, 1000, 'swing');
+            });
+        });
+    </script>
+</body>
+</html>
